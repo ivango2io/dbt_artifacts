@@ -7,7 +7,7 @@
         {% set datasets_to_load = ['exposures', 'seeds', 'snapshots', 'invocations'] %}
         {% if results != [] %}
             {# When executing, and results are available, then upload the results #}
-            {% set datasets_to_load = ['model_executions', 'seed_executions', 'snapshot_executions'] + datasets_to_load %}
+            {% set datasets_to_load = ['model_executions', 'seed_executions', 'test_executions', 'snapshot_executions'] + datasets_to_load %}
         {% endif %}
 
         {# Upload each data set in turn #}
